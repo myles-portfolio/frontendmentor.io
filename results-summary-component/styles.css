@@ -288,6 +288,12 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 2560px) {
+  .btn.continue {
+    max-width: 307px;
+  }
+}
+
 @media screen and (max-width: 1439px) {
   .component {
     padding-right: 30px;

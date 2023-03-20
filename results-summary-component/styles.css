@@ -94,19 +94,19 @@ main {
 .component {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 30px;
+  margin: 0 auto;
   background-color: var(--white);
   max-width: 735px;
   border-radius: 35px;
   margin: 20px;
-  box-shadow:
-    0 1.5px 2.4px rgba(0, 0, 0, 0.04),
-    0 5px 3.5px rgba(0, 0, 0, 0.032),
-    0 9.5px 5.5px rgba(0, 0, 0, 0.025),
-    0 13.2px 9.5px rgba(0, 0, 0, 0.018),
-    0 15.6px 16.3px rgba(0, 0, 0, 0.013),
-    0 17px 26px rgba(0, 0, 0, 0.007);
+  box-shadow: 
+    0 1.5px 2.4px rgba(48, 60, 90, 0.04),
+    0 5px 3.5px rgba(48, 60, 90, 0.032),
+    0 9.5px 5.5px rgba(48, 60, 90, 0.025), 
+    0 13.2px 9.5px rgba(48, 60, 90, 0.018),
+    0 15.6px 16.3px rgba(48, 60, 90, 0.013),
+    0 17px 26px rgba(48, 60, 90, 0.007); 
 }
 
 .leftSide {
@@ -245,6 +245,7 @@ main {
 .points {
   color: var(--dark--gray-blue);
   font-weight: 600;
+  width: 80px;
 }
 
 .sum-text {
@@ -259,6 +260,7 @@ main {
   border-radius: 35px;
   border: 1px solid transparent;
   background-color: var(--dark--gray-blue);
+  font-family: 'Hanken Grotesk', sans-serif;
   color: var(--white);
   padding: 15px 0;
   max-width: 280px;
@@ -266,39 +268,122 @@ main {
 
 .btn.continue {
   max-width: 280px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .btn.continue p {
   font-weight: 500;
   font-size: 18px;
   max-width: 100%;
-  font-family: 'Hanken Grotesk', sans-serif;
+  
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-bottom: 100px;
+  margin: 20px 0;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 375px) {
-  .qrc-card {
-    width: 90%;
+@media screen and (max-width: 1439px) {
+  .component {
+    padding-right: 30px;
+  }
+
+  .leftSide {
+    padding: 0 30px;
+    width: 350px;
+  }
+
+  .rightSide {
+    margin-bottom: 30px;
+    max-width: 350px;
+  }
+
+  .resultList {
+    margin: 0;
+  }
+
+  .result {
+    max-width: 100%;
+  }
+
+  .points {
+    width: 80px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .component {
+    margin: 0 auto;
+  }
+
+  .leftSide {
+    padding: 0 15px;
+  }
+
+  .result {
+    gap: 30px;
+  }
+
+  .points {
+    width: 90px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 590px) {
+  h3 {
+    margin-top: 25px;
+    font-size: 20px;
+  }
 
-  .qrc-img {
+  h3.h3-alt {
+    margin-left: 30px;
+  }
+  
+  .component {
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 0;
+    width: 375px;
+    margin-top: 100px;
+    border-radius: 0;
+  }
+
+  .leftSide {
+    flex-grow: 1;
+    padding: 0 25px;
+    border-radius: 0 0 35px 35px;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .rightSide {
+    max-width: 375px;
+  }
+
+  .resultList {
+    margin: 0 30px 30px 30px;
+  }
+
+  .message {
     max-width: 90%;
   }
 
-  .qrc-card {
-    width: 90%;
+  .result,
+  .message p {
+    font-size: 16px;
+  }
+
+  .btn.continue {
+    max-width: 315px;
   }
 }
+

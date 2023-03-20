@@ -2,46 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+    <main>
+      <h1 class="screenReader sr-only">Results Summary Component</h1>
+      <div class="container">
+        <div class="component">
+          <div class="leftSide">
+            <h3>Your Result</h3>
+            <div class="circle">
+              <h1 class="totalPoints">76</h1>
+              <p class="totalPossiblePoints">of 100</p>
+            </div>
+            <div class="message">
+              <h2>Great</h2>
+              <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+          </div> 
+          <div class="rightSide">
+            <h3 class="h3-alt">Summary</h3>
+            <div class="resultList">
+              <div id="first" class="result">
+                <div id="cat1" class="category">
+                  <img src="./assets/images/icon-reaction.svg" alt="reaction icon"> 
+                  <p>Reaction</p>
+                </div>
+                <div class="points">
+                  <span class="bold-sum">80</span> 
+                  <span class="sum-text">/ 100</span>
+                </div>
+              </div>
+              <div id="second" class="result">
+                <div id="cat2" class="category">
+                  <img src="./assets/images/icon-memory.svg" alt="memory icon">
+                  <p>Memory</p>
+                </div>
+                <div class="points">
+                  <span class="bold-sum">92</span>
+                  <span class="sum-text">/ 100</span>
+                </div>
+              </div>
+              <div id="third" class="result">
+                <div id="cat3" class="category">
+                  <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
+                  <p>Verbal</p>
+                </div>
+                <div class="points">
+                  <span class="bold-sum">61</span>
+                  <span class="sum-text">/ 100</span>
+                </div>
+              </div>
+              <div id="fourth" class="result">
+                <div id="cat4" class="category">
+                  <img src="./assets/images/icon-visual.svg" alt="visual icon">
+                  <p>Visual</p>
+                </div>
+                <div class="points">
+                  <span class="bold-sum">72</span>
+                  <span class="sum-text">/ 100</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn continue">
+              <p>Continue</p>
+            </button>
+          </div>
+        </div>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">myles_h</a>.
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

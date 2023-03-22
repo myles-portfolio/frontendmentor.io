@@ -136,6 +136,8 @@ main {
 
 .totalPoints {
   line-height: 1;
+  font-size: 72px;
+  color: var(--white);
 }
 
 .totalPossiblePoints {

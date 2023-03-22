@@ -35,6 +35,8 @@ h2 {
   padding: 0;
 }
 
+p { line-height: 175%;}
+
 h1, h2 {
   font-family: 'Fraunces', serif;
   font-size: 32px;
@@ -67,6 +69,11 @@ button {
   flex-direction: row;
   gap: 5px;
   justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: var(--gray-blue);
 }
 
 button img {
@@ -75,6 +82,7 @@ button img {
 
 button p {
   font-weight: 700;
+  font-size: 15px;
 }
 
 .container {
@@ -92,9 +100,11 @@ button p {
   margin: 20px;
 }
 
-.left img {
-  max-width: 300px;
+.left {
+  background: url(./images/image-product-desktop.jpg) center;
+  background-size: cover;
   border-radius: 10px 0 0 10px;
+  width: 300px;
 }
 
 .right {
@@ -102,6 +112,7 @@ button p {
   flex-direction: column;
   max-width: 300px;
   padding: 30px;
+  gap: 30px;
   background: var(--white);
   border-radius: 0 10px 10px 0;
   justify-content: space-between;
@@ -126,4 +137,28 @@ button p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1151px) {
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+    margin: 0 0 20px 0;
+  }
+
+  .left {
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    background: url(./images/image-product-mobile.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .right {
+    border-radius: 0 0 10px 10px;
+    max-width: 100%;
+    gap: 15px;
+  }
 }

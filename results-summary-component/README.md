@@ -34,6 +34,14 @@ Users should be able to:
 
 ## My process
 
+- Reviewed the style-guide and mockup images
+- Created html and css files, then added root section with style guide elements
+- Added stylesheets for CSS and font to HTML
+- Formatted HTML in containers and made notes on if I wanted a container to be flexbox or not
+- Filled in default and standardized CSS attributes to elements
+- Launched page and begin adjusting margin, padding and border until I was happy with the look for the desktop view
+- Repeated last step for mobile view and wrapped up with tweaks to the scale of the container on widths between media screens
+
 ### Built with
 
 - Semantic HTML5 markup

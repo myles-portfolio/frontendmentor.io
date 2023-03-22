@@ -269,13 +269,9 @@ main {
 .btn.continue {
   max-width: 280px;
   margin-top: 30px;
-}
-
-.btn.continue p {
   font-weight: 500;
   font-size: 18px;
   max-width: 100%;
-  
 }
 
 .attribution {

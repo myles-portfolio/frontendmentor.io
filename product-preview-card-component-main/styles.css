@@ -64,7 +64,8 @@ button {
   color: var(--white);
   padding: 15px 0;
   max-width: 100%;
-
+  font-weight: 700;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -78,11 +79,6 @@ button:hover {
 
 button img {
   width: 14px;
-}
-
-button p {
-  font-weight: 700;
-  font-size: 15px;
 }
 
 .container {

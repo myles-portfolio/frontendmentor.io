@@ -55,21 +55,21 @@ h1 {
 }
 
 h2 {
-    color: var(--white);
-    padding: 15px 0;
-    font-size: 32px;
+  font-size: 24px;
+  margin-top: 50px;
 }
 
 h3 {
-  font-size: 24px;
-  margin-top: 50px;
+    color: var(--white);
+    padding: 15px 0;
+    font-size: 32px;
 }
 
 main {
   margin: 0 auto;
 }
 
-.h3-alt {
+.h-alt {
   color: var(--dark--gray-blue);
 }
 
@@ -342,12 +342,12 @@ main {
 }
 
 @media screen and (max-width: 590px) {
-  h3 {
+  h2 {
     margin-top: 25px;
     font-size: 20px;
   }
 
-  h3.h3-alt {
+  h2.h-alt {
     margin-left: 30px;
   }
   
@@ -356,7 +356,6 @@ main {
     padding: 0;
     gap: 0;
     width: 375px;
-    margin-top: 100px;
     border-radius: 0;
   }
 

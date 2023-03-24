@@ -58,9 +58,142 @@ main {
   transform: translate(-50%, -50%);
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+.card {
+  background: var(--dark-blue-card);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: 0px 25px 50px #0c1729;
+}
+
+.imageContainer {
+  position: relative;
+  width: 310px;
+  height: 310px;
+}
+
+.imageContainer img {
+  width: 310px;
+  height: 310px;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-color: var(--cyan);
+  border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-image: url(./images/icon-view.svg);
+  background-size: cover;
+}
+
+.imageContainer:hover .overlay {
+  opacity: 0.5;
+}
+
+.imageContainer:hover .view {
+  opacity: 1;
+}
+
+.overlayFade {
+  height: 310px;
+  width: 310px;
+  top: 0;
+  left: 0;
+  background-color: var(--cyan);
+}
+
+.viewHover {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.desc {
+  font-weight: 300;
+  padding: 0 0 5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.value {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.p-flexRow {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.value .p-flexRow>img {
+  width: 12px;
+}
+
+.timeLeft .p-flexRow>img {
+  width: 22px;
+}
+
+.divider {
+  width: 310px;
+  height: 1px;
+  background-color: var(--dark-blue-line);
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  background: url(./images/image-avatar.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.authorDetails p {
+  font-size: 16px;
+}
+
 .attribution { 
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
+  margin-top: 10px; 
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -49,15 +49,6 @@ main {
   margin: 0 auto;
 }
 
-.container {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 a {
   text-decoration: none;
   color: var(--white);
@@ -65,6 +56,15 @@ a {
 
 a:hover {
   color: var(--cyan);
+}
+
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .card {
@@ -78,6 +78,15 @@ a:hover {
   gap: 20px;
 
   box-shadow: 0px 25px 50px #0c1729;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
 }
 
 .imageContainer {

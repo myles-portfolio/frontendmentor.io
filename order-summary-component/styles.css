@@ -1,6 +1,7 @@
 :root {
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
+  --white: hsl(0, 0%, 100%);
 
   --dark-blue: hsl(223, 47%, 23%);
   --lavender: hsl(224, 23%, 55%);
@@ -30,24 +31,51 @@ p,
 h1,
 h2 {
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0;
   text-align: center;
 }
 
-h2 {
+h2 { font-size: 28px; }
+
+h2, .plan {
   color: var(--dark-blue);
   font-weight: 900;
 }
+
+p { line-height: 1.6;}
 
 img {
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
   border-style: none;
+  border-radius: 20px 20px 0px 0px;
+}
+
+a {
+  color: var(--bright-blue);
+  font-weight: 900;
+}
+
+a:hover {
+  color: #766cf1;
+  text-decoration: none;
 }
 
 main {
   margin: 0 auto;
+}
+
+button {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .container {
@@ -60,16 +88,27 @@ main {
 }
 
 .card {
-  background: var(--very-pale-blue);
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 360px;
+  background: var(--white);
+  border-radius: 20px;
+  max-width: 450px;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
   box-shadow: 0px 15px 50px hsla(224, 23%, 55%, 0.3);
+  position: relative;
+}
+
+.image {
+  max-width: 450px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+  margin: 30px 40px;
 }
 
 .sr-only {
@@ -81,14 +120,65 @@ main {
   overflow: hidden;
 }
 
+.overview {
+  margin: 0 30px;
+}
+
 .details {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  background-color: hsla(225, 100%, 94%, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.left { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  background: url(./images/icon-music.svg);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .offer {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.right { font-size: 14px;}
+
+#payment {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    box-shadow: 0px 15px 15px hsla(245, 75%, 52%, 0.15);
+}
+
+#payment:hover {
+  background-color: hsl(245, 83%, 68%);
+  box-shadow: 0px 15px 25px hsla(245, 83%, 68%, 0.3);
+}
+
+#cancel {
+  background: none;
+  color: var(--lavender);
+  font-weight: 900;
+}
+
+#cancel:hover {
+  color: var(--dark-blue);
 }
 
 .attribution { 
@@ -98,3 +188,38 @@ main {
 }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size:auto;
+    background-repeat: repeat-x;
+    background-position-x: 55%;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  h2 { font-size: 26px; }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: auto;
+    background-repeat: repeat-x;
+    background-position-x: 0%;
+  }
+
+  .card { max-width: 330px; }
+
+  h2 { font-size: 24px; }
+
+  .cardContainer { 
+    width: 330px;
+    margin: 20px 0 0 0;
+   }
+
+  .details, .actions { margin: 0 15px; }
+
+  .details, .cancel { margin-bottom: 10px;}
+}

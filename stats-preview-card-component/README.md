@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/stats-preview-card-component-T1Ya0GVEkz)
 - Live Site URL: [Netlify](https://stats-preview-card-component-myles.netlify.app/)
 
 ## My process

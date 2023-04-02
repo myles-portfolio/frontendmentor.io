@@ -108,12 +108,6 @@ img {
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--dark-grayish-blue) / 0.25);
 }
 
-article .quoteIcon {
-  background-image: url('./images/bg-pattern-quotation.svg');
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
 .testimonial {
   margin: 20px;
   display: flex;

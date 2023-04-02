@@ -14,7 +14,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -40,6 +39,7 @@ Users should be able to:
 - Formatted HTML elements using CSS
 - Initiated CSS Grid layout
 - Set up different grid layout for varying media screens
+- Tried figuring out how to get the icon to appear behind the text of the first testimonial, but was unsuccessful.
 
 ### Built with
 
@@ -65,6 +65,8 @@ I got to practice my CSS grid skills and understand to appreciate grid-template-
 ### Continued development
 
 I want to practice using CSS grid more, and will likely find additional projects where I can practice it.
+
+I still need to figure out how to get the quotation icon SVG to appear behind the text of the first testimonial.
 
 
 ### Useful resources

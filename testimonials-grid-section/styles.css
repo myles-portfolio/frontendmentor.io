@@ -144,7 +144,7 @@ img {
   background: var(--moderate-violet);
 }
 
-#standard {
+#standard-1, #standard-2 {
   background: var(--white);
 }
 

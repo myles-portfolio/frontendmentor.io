@@ -17,6 +17,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ## Overview
 
+My solution to this Frontend Mentor challenge.
+
 ### The challenge
 
 Users should be able to:

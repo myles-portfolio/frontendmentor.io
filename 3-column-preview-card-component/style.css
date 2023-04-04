@@ -6,9 +6,7 @@
   --clr-white: hsl(0, 0%, 95%);
   --clr-gray: hsl(0, 0%, 81%);
 
-  --fs-11: 0.6875rem;
-  --fs-15: 0.9375rem;
-  --fs-32: 2rem;
+  --fs-15: 15px;
 }
 
 *,
@@ -17,9 +15,12 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--fs-15);
+}
+
 body {
   font-family: 'Lexend Deca', sans-serif;
-  font-size: var(--fs-15);
   background: var(--clr-white);
   min-height: 100vh;
   display: grid;
@@ -28,7 +29,7 @@ body {
 
 h1 {
   font-family: 'Big Shoulders Display', cursive;
-  font-size: var(--fs-32);
+  font-size: 2em;
   color: var(--clr-white);
   margin: 0;
   text-transform: uppercase;
@@ -51,21 +52,18 @@ img {
 
 button {
   background-color: var(--clr-white);
-  padding: .75rem 1.25rem;
-  width: 9.375rem;
-  border: 1px solid transparent;
+  padding: .75em 1.75em;
+  border: 2px solid transparent;
   border-radius: 35px;
   font-family: 'Lexend Deca', sans-serif;
   font-size: var(--fs-15);
   cursor: pointer;
-  justify-self: flex-end;
 }
 
 .col--container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 62%;
   margin: 0 auto;
 }
 
@@ -76,6 +74,7 @@ button {
   padding: 2.25rem;
   flex: 1 0;
   justify-content: flex-start;
+  max-width: 300px;
 }
 
 .col:first-child {
@@ -100,26 +99,32 @@ button {
   margin-top: auto;
 }
 
-#sedan {
+#sedan .btn>button:hover,
+#suv .btn>button:hover,
+#luxury .btn>button:hover{
+  border: 2px solid var(--clr-white);
+  color: var(--clr-white);
+}
+
+#sedan,
+#sedan .btn>button:hover {
   background-color: var(--clr-orange);
+}
+#suv,
+#suv .btn>button:hover {
+  background-color: var(--clr-cyan);
+}
+#luxury,
+#luxury .btn>button:hover {
+  background-color: var(--clr-green);
 }
 
 #sedan .btn>button {
   color: var(--clr-orange);
 }
-
-#suv {
-  background-color: var(--clr-cyan);
-}
-
 #suv .btn>button {
   color: var(--clr-cyan);
 }
-
-#luxury {
-  background-color: var(--clr-green);
-}
-
 #luxury .btn>button {
   color: var(--clr-green);
 }
@@ -132,4 +137,18 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 767px) {
+  .col--container {
+    flex-direction: column;
+  }
+
+  .col:first-child {
+    border-radius: .5rem .5rem 0 0;
+  }
+
+  .col:last-child {
+    border-radius: 0 0 .5rem .5rem;
+  }
 }

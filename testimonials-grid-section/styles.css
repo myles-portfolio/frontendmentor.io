@@ -105,6 +105,15 @@ img {
   gap: 20px;
 }
 
+.quote-icon {
+  position: absolute;
+  right: 5.25rem;
+  top: 1.25rem;
+  height: 5rem;
+  width: 5rem;
+  z-index: -1;
+}
+
 .person {
   display: flex;
   flex-direction: row;
@@ -132,6 +141,8 @@ img {
 
 #featured {
   background: var(--moderate-violet);
+  position: relative;
+  z-index: 0;
 }
 
 #standard-1, #standard-2 {
